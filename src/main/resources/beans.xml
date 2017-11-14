@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:myname="http://www.lexueba.com/schema/user"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.lexueba.com/schema/user 
+       http://www.lexueba.com/schema/user.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+       >
+   
+    
+    <bean id="testBeanPostProcessor" class="process.TestBeanPostProcessor"></bean>
+    <bean id="testBeanFactoryPostProcessor" class="process.TestBeanFactoryPostProcessor"></bean>
+    <bean id="testBean" class="process.TestBean">
+        <property name="name" value="丑星星"></property>
+        <property name="age" value="18"></property>
+     </bean>
+</beans>
