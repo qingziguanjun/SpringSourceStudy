@@ -13,6 +13,8 @@ public class UserBeanDefinitionParser extends AbstractSingleBeanDefinitionParser
     }
 
     protected void doParse(Element element, BeanDefinitionBuilder bean) {
+    	System.out.println(bean.toString());
+    	System.out.println("解析*******");
         String userName = element.getAttribute("userName");
         String email = element.getAttribute("email");
         if (StringUtils.hasText(userName)) {

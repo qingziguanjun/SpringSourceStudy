@@ -5,7 +5,8 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
-
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 public class UserServiceImpl implements UserService {
 
 	private JdbcTemplate jdbcTemplate;
@@ -29,6 +30,14 @@ public class UserServiceImpl implements UserService {
 
 	public void setDataSource(DataSource dataSource) {
 			this.jdbcTemplate = new JdbcTemplate(dataSource);
+	}
+
+	public void update(User s) {
+		jdbcTemplate.update("update user set name=? where id=1",
+				new Object[] {s.getName()},
+				new int[] {java.sql.Types.VARCHAR});
+		//throw new RuntimeException("aaa");
+		
 	}
 
 }

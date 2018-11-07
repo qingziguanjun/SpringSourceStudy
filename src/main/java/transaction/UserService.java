@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(propagation=Propagation.REQUIRED)
 public interface UserService {
 	public void save(User s);
+	public void update(User s);
 	public List<User> getUsers();
 	
 }
