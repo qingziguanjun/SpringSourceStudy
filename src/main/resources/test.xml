@@ -5,4 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.lexueba.com/schema/user http://www.lexueba.com/schema/user.xsd">
     <myname:user id="testbean" userName="aaa" email="bbb"/>
+    <bean id="testBeanPostProcessor" class="process.TestBeanPostProcessor"></bean>
+    <bean id="testBeanFactoryPostProcessor" class="process.TestBeanFactoryPostProcessor"></bean>
 </beans>

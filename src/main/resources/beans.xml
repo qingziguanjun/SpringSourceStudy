@@ -21,4 +21,6 @@
         <property name="name" value="丑星星"></property>
         <property name="age" value="18"></property>
      </bean>
+     <bean id="mybpp" class="bbp.MyBBP">
+     </bean>
 </beans>

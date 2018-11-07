@@ -4,6 +4,7 @@ package transaction;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.interceptor.TransactionInterceptor;
 
 public class UserServiceTest {
 
@@ -15,7 +16,8 @@ public class UserServiceTest {
 		user.setName("haojia");
 		user.setAge(1);
 		user.setSex("sbsbssbsb");
-		userService.save(user);
+		userService.update(user);
+		//TransactionInterceptor
 	}
 
 }

@@ -13,7 +13,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
    <!-- create table user(  	id int(11)  auto_increment,	name varchar(255),	age int(11) ,	sex varchar(255) ,primary key (id)) default charset=utf8; -->
    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
    		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-   		<property name="url" value="jdbc:mysql://localhost:3306/ssm"></property>
+   		<property name="url" value="jdbc:mysql://140.143.142.15:3306/ssm"></property>
    		<property name="username" value="root"></property>
    		<property name="password" value="password"></property>
    		<property name="initialSize" value="1"></property>
