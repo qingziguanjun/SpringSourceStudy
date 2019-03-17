@@ -12,7 +12,6 @@ public class TestBean {
 	}
 	
 	public void test(){
-		System.out.println("test");
-		System.out.println("test2");
+		System.out.println("TestBean test");
 	}
 }
